@@ -24,9 +24,7 @@ public class ImageBufferDownload implements ImageBuffer
             var3.drawImage(par1BufferedImage, 0, 0, (ImageObserver)null);
             var3.dispose();
             this.imageData = ((DataBufferInt)var2.getRaster().getDataBuffer()).getData();
-            //this.func_78433_b(0, 0, 32, 16);
-            //this.func_78434_a(32, 0, 64, 32);
-            //this.func_78433_b(0, 16, 64, 32);
+
             boolean var4 = false;
             int var5;
             int var6;
