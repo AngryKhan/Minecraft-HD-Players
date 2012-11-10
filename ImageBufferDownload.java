@@ -3,7 +3,7 @@ package net.minecraft.src;
 import java.awt.Graphics;
 import java.awt.image.*;
 
-public class ImageBufferDownload implements ImageBuffer
+public class ImageBufferDownload implements IImageBuffer
 {
     private int[] imageData;
     private int imageWidth;

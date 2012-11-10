@@ -27,7 +27,9 @@ public class HDKeyHandler extends KeyHandler {
         public void keyDown(EnumSet<TickType> types, KeyBinding kb,
                         boolean tickEnd, boolean isRepeat) {
             Minecraft mc = ModLoader.getMinecraftInstance();
-			HDSkinHandler.forceUpdateSkins(mc.theWorld);
+			if(mc.theWorld!=null && mc.currentScreen instanceof GuiIngameMenu){
+				HDSkinHandler.forceUpdateSkins(mc.theWorld);
+			}
                 
         }
 
